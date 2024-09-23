@@ -220,7 +220,8 @@ var slider = {
     }
 
     return `<p>${questionText}</p>`;
-  }
+  },
+  slider_width: 300 // This sets the width of the slider in pixels
 };
 
 var conditional_slider = {
