@@ -204,17 +204,17 @@ var slider = {
   max: 50,
   step: 1,
   labels: [
-    '1<br>A tiny extent', 
-    '25<br>Moderate extent', 
-    '50<br>Huge extent'
+    '1<br>A bit more likely', 
+    '25<br>Quite a bit more likely',
+    '50<br>Massively more likely'
   ],
   stimulus: function() {
     var response = jsPsych.data.get().last().values()[0].response.Q0;
     var questionText = "";
     if (response == "Patients have a better chance of recovery with the medicine") {
-      questionText = "To what extent do you think that people are more likely to get better with the medicine?";
+      questionText = "How likely do you think people are to get better with the medicine?";
     } else if (response == "Patients have a better chance of recovery with the placebo") {
-      questionText = "To what extent do you think that people are more likely to get better with the placebo?";
+      questionText = "How likely do you think people are to get better with the placebo?";
     } else {
       questionText = "Erreur : réponse inattendue.";
     }
@@ -227,7 +227,7 @@ var slider = {
         </div>
       </div>`;
   },
-  slider_width: 300 // Make sure the slider width is consistent here
+  slider_width: 350 // Make sure the slider width is consistent here
 };
 
 var conditional_slider = {
