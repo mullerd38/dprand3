@@ -218,16 +218,16 @@ var slider = {
     } else {
       questionText = "Erreur : réponse inattendue.";
     }
-    
+
     return `
-      <div style="width: 100%; text-align: left;">
+      <div style="text-align: left;">
         <p>${questionText}</p>
         <div class="slider-container">
           <!-- The slider will be inserted here by jsPsych -->
         </div>
       </div>`;
   },
-  slider_width: 300 // Keep the slider width in JavaScript as well
+  slider_width: 300 // Make sure the slider width is consistent here
 };
 
 var conditional_slider = {

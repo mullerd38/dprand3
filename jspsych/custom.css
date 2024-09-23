@@ -24,9 +24,12 @@
   font-size: 20px;
 }
 
+/* Specific override for sliders inside .slider-container */
 .slider-container .jspsych-html-slider-response-slider {
-  width: 300px; /* Make this slider 300px wide */
+  width: 300px !important; /* Set a fixed width to override the default */
+  display: block; /* Make sure it's a block element */
   margin-left: 0; /* Align to the left */
+  margin-right: auto; /* Prevent centering */
 }
 
 .jspsych-html-slider-response-container {
