@@ -212,9 +212,9 @@ var slider = {
     var response = jsPsych.data.get().last().values()[0].response.Q0;
     var questionText = "";
     if (response == "Patients have a better chance of recovery with the medicine") {
-      questionText = "        How likely do you think people are to get better with the medicine?";
+      questionText = "                      How likely do you think people are to get better with the medicine?";
     } else if (response == "Patients have a better chance of recovery with the placebo") {
-      questionText = "        How likely do you think people are to get better with the placebo?";
+      questionText = "                      How likely do you think people are to get better with the placebo?";
     } else {
       questionText = "Erreur : réponse inattendue.";
     }
