@@ -218,20 +218,7 @@ var slider = {
     } else {
       questionText = "Erreur : réponse inattendue.";
     }
-    return `
-    <div class="jspsych-html-slider-response-container">
-      <div class="jspsych-html-slider-response-stimulus">
-        <p>${questionText}</p>
-      </div>
-      <div class="slider-container">
-        <div class="jspsych-html-slider-response-slider"></div>
-        <div class="jspsych-html-slider-response-label-container">
-          <div class="jspsych-html-slider-response-label">1<br>A tiny extent</div>
-          <div class="jspsych-html-slider-response-label">25<br>Moderate extent</div>
-          <div class="jspsych-html-slider-response-label">50<br>Huge extent</div>
-    </div>
-  </div>
-</div>`;
+    return `<p>${questionText}</p>`;
   },
   slider_width: 350
 };
