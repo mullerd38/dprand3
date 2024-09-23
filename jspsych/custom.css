@@ -24,29 +24,35 @@
   font-size: 20px;
 }
 .jspsych-html-slider-response-container {
-  position: relative; /* This is generally okay */
+  position: relative; /* Generally okay */
 }
 
 .jspsych-html-slider-response-stimulus {
-  margin-bottom: 20px; /* This is fine as it provides spacing */
+  margin-bottom: 20px; /* This provides space between elements */
 }
 
 .jspsych-html-slider-response-label-container {
   display: flex;
   justify-content: flex-start; /* Align labels to the left */
   position: relative;
-  top: 0; /* Reset this to prevent shifts */
+  top: 0; /* Remove negative offset */
 }
 
 .jspsych-html-slider-response-label {
-  width: 20%; /* Keep this as needed */
-  text-align: left; /* Ensure text aligns left */
+  width: 20%; /* Adjust width as needed */
+  text-align: left; /* Ensure labels align left */
 }
 
-/* Ensure the slider is correctly sized */
-.slider-container .jspsych-html-slider-response-slider {
+.slider-container {
   width: 350px !important; /* Set the desired width */
-  display: block;
+  display: block; /* Ensure block display */
+  margin-left: 0 !important; /* Prevent centering */
+  margin-right: auto !important; /* Keep it left-aligned */
+}
+
+.jspsych-html-slider-response-slider {
+  width: 350px !important; /* Set a fixed width for the slider */
+  display: block !important; /* Ensure block display */
   margin-left: 0 !important; /* Align to the left */
-  margin-right: auto; /* Prevent centering */
+  margin-right: auto !important; /* Prevent centering */
 }
