@@ -47,6 +47,6 @@
 .slider-container .jspsych-html-slider-response-slider {
   width: 300px !important; /* Set the desired width */
   display: block;
-  margin-left: 0; /* Align to the left */
+  margin-left: 0 !important; /* Align to the left */
   margin-right: auto; /* Prevent centering */
 }
