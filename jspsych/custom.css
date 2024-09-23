@@ -28,7 +28,7 @@
 .slider-container .jspsych-html-slider-response-slider {
   width: 300px !important; /* Set a fixed width to override the default */
   display: block; /* Make sure it's a block element */
-  margin-left: 0; /* Align to the left */
+  margin-left: 0 !important; /* Align to the left */
   margin-right: auto; /* Prevent centering */
 }
 
