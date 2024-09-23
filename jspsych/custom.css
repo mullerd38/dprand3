@@ -40,7 +40,8 @@
 }
 
 .jspsych-html-slider-response-slider {
-  width: 300%;
+  width: 300px;
+  margin-left: 0;
 }
 
 .jspsych-html-slider-response-label-container {
