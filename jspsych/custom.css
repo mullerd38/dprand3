@@ -1,3 +1,28 @@
+.custom-title {
+  font-family: 'Slabo 27px', serif;
+}
+
+.instructions {
+  max-width: 650px;
+  text-align: justify;
+  font-size: 19px;
+}
+
+.instructions_questionnary {
+  max-width: 800px;
+  text-align: justify;
+  font-size: 19px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bold {
+  font-weight: 550;
+}
+
+.stimuli {
+  font-size: 20px;
+}
 .jspsych-html-slider-response-container {
   position: relative; /* Generally okay */
 }
@@ -19,14 +44,14 @@
 }
 
 .slider-container {
-  width: 300px !important; /* Set the desired width */
+  width: 350px !important; /* Set the desired width */
   display: block; /* Ensure block display */
   margin-left: 0 !important; /* Prevent centering */
   margin-right: auto !important; /* Keep it left-aligned */
 }
 
 .jspsych-html-slider-response-slider {
-  width: 300px !important; /* Set a fixed width for the slider */
+  width: 350px !important; /* Set a fixed width for the slider */
   display: block !important; /* Ensure block display */
   margin-left: 0 !important; /* Align to the left */
   margin-right: auto !important; /* Prevent centering */

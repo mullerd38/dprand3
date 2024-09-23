@@ -233,7 +233,7 @@ var slider = {
   </div>
 </div>`;
   },
-  slider_width: 350 // Make sure the slider width is consistent here
+  slider_width: 350
 };
 
 var conditional_slider = {
