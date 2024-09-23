@@ -26,8 +26,9 @@
 
 .slider-container {
   position: relative;
-  width: 300px; /* Set the desired width of the slider */
-  margin-left: 0; /* Ensure the slider is aligned with the left side */
+  width: 300px; /* Set a fixed width for the slider */
+  margin-left: 0; /* Make sure it is not centered */
+  text-align: left; /* Aligns contents inside the container to the left */
 }
 
 .jspsych-html-slider-response-container {
