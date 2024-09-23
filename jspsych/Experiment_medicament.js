@@ -201,14 +201,12 @@ var slider = {
   slider_start: 1,
   require_movement: true,
   min: 1,
-  max: 100,
+  max: 50,
   step: 1,
   labels: [
-    '1<br>Very small extent', 
-    '25<br>Small extent', 
-    '50<br>Moderate extent', 
-    '75<br>Large extent', 
-    '100<br>Very large extent'
+    '1<br>A tiny extent', 
+    '25<br>Moderate extent', 
+    '50<br>Huge extent'
   ],
   stimulus: function() {
     var response = jsPsych.data.get().last().values()[0].response.Q0;
