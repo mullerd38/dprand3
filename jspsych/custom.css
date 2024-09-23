@@ -24,11 +24,9 @@
   font-size: 20px;
 }
 
-.slider-container {
-  position: relative;
-  width: 300px; /* Set a fixed width for the slider */
-  margin-left: 0; /* Make sure it is not centered */
-  text-align: left; /* Aligns contents inside the container to the left */
+.slider-container .jspsych-html-slider-response-slider {
+  width: 300px; /* Make this slider 300px wide */
+  margin-left: 0; /* Align to the left */
 }
 
 .jspsych-html-slider-response-container {
@@ -37,11 +35,6 @@
 
 .jspsych-html-slider-response-stimulus {
   margin-bottom: 20px;
-}
-
-.jspsych-html-slider-response-slider {
-  width: 300px;
-  margin-left: 0;
 }
 
 .jspsych-html-slider-response-label-container {
