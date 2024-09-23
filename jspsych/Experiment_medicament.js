@@ -219,7 +219,13 @@ var slider = {
       questionText = "Erreur : réponse inattendue.";
     }
 
-    return `<p>${questionText}</p>`;
+    return `
+      <div style="display: inline-block; text-align: left;">
+        <p>${questionText}</p>
+        <div class="slider-container">
+          <!-- The slider will be inserted here by jsPsych -->
+        </div>
+      </div>`;
   },
   slider_width: 300 // This sets the width of the slider in pixels
 };
