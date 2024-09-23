@@ -195,6 +195,7 @@ var question = {
   }
 ]
 }
+
 var slider = {
   type: jsPsychHtmlSliderResponse,
   slider_start: 1,
@@ -202,6 +203,11 @@ var slider = {
   min: 1,
   max: 50,
   step: 1,
+  labels: [
+    '1<br>A bit more likely', 
+    '25<br>Quite a bit more likely',
+    '50<br>Massively more likely'
+  ],
   stimulus: function() {
     var response = jsPsych.data.get().last().values()[0].response.Q0;
     var questionText = "";
@@ -212,7 +218,6 @@ var slider = {
     } else {
       questionText = "Erreur : réponse inattendue.";
     }
-    
     return `
     <div class="jspsych-html-slider-response-container">
       <div class="jspsych-html-slider-response-stimulus">
@@ -224,11 +229,11 @@ var slider = {
           <div class="jspsych-html-slider-response-label">1<br>A bit more likely</div>
           <div class="jspsych-html-slider-response-label">25<br>Quite a bit more likely</div>
           <div class="jspsych-html-slider-response-label">50<br>Massively more likely</div>
-        </div>
-      </div>
-    </div>`;
+    </div>
+  </div>
+</div>`;
   },
-  slider_width: 350 // Ensure this width is appropriate for your layout
+  slider_width: 350 // Make sure the slider width is consistent here
 };
 
 var conditional_slider = {
