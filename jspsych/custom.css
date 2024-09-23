@@ -23,31 +23,30 @@
 .stimuli {
   font-size: 20px;
 }
-
-/* Specific override for sliders inside .slider-container */
-.slider-container .jspsych-html-slider-response-slider {
-  width: 300px !important; /* Set a fixed width to override the default */
-  display: block; /* Make sure it's a block element */
-  margin-left: 0 !important; /* Align to the left */
-  margin-right: auto; /* Prevent centering */
-}
-
 .jspsych-html-slider-response-container {
-  position: relative;
+  position: relative; /* This is generally okay */
 }
 
 .jspsych-html-slider-response-stimulus {
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* This is fine as it provides spacing */
 }
 
 .jspsych-html-slider-response-label-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start; /* Align labels to the left */
   position: relative;
-  top: -25px; /* Adjust this value as necessary */
+  top: 0; /* Reset this to prevent shifts */
 }
 
 .jspsych-html-slider-response-label {
-  width: 20%;
-  text-align: left;
+  width: 20%; /* Keep this as needed */
+  text-align: left; /* Ensure text aligns left */
+}
+
+/* Ensure the slider is correctly sized */
+.slider-container .jspsych-html-slider-response-slider {
+  width: 300px !important; /* Set the desired width */
+  display: block;
+  margin-left: 0; /* Align to the left */
+  margin-right: auto; /* Prevent centering */
 }
