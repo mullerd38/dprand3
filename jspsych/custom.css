@@ -24,12 +24,13 @@
   font-size: 20px;
 }
 .jspsych-html-slider-response-container {
-  position: relative; /* Generally okay */
+  position: relative;
 }
 
 .jspsych-html-slider-response-stimulus {
+  margin-left: 20px !important;
+  text-align: left;
   margin-bottom: 20px; /* This provides space between elements */
-  margin-left: 100px;
 }
 
 .jspsych-html-slider-response-label-container {
