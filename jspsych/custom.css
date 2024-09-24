@@ -24,40 +24,8 @@
   font-size: 20px;
 }
 
-.jspsych-html-slider-response-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start !important; /* Force left alignment */
-}
 
-.jspsych-html-slider-response-stimulus {
-  margin-left: 20px !important;
+.jspsych-html-slider-response-stimulus p {
   text-align: left;
-  margin-bottom: 20px; /* This provides space between elements */
-}
-
-.jspsych-html-slider-response-label-container {
-  display: flex;
-  justify-content: flex-start; /* Align labels to the left */
-  position: relative;
-  top: 0; /* Remove negative offset */
-}
-
-.jspsych-html-slider-response-label {
-  width: 20%; /* Adjust width as needed */
-  text-align: left; /* Ensure labels align left */
-}
-
-.slider-container {
-  width: 350px !important; /* Set the desired width */
-  display: block; /* Ensure block display */
-  margin-left: 0 !important; /* Prevent centering */
-  margin-right: auto !important; /* Keep it left-aligned */
-}
-
-.jspsych-html-slider-response-slider {
-  width: 350px !important; /* Set a fixed width for the slider */
-  display: block !important; /* Ensure block display */
-  margin-left: 0 !important; /* Align to the left */
-  margin-right: auto !important; /* Prevent centering */
+  margin-left: 20px; /* Optional for extra positioning */
 }
