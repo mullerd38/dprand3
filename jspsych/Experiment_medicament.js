@@ -219,8 +219,10 @@ var slider = {
       questionText = "Erreur : réponse inattendue.";
     }
     return `
-    <div class="jspsych-html-slider-response-stimulus">
-      <p>${questionText}</p>
+    <div class="jspsych-html-slider-response-container">
+      <div class="jspsych-html-slider-response-stimulus">
+        <p>${questionText}</p>
+      </div>
     </div>`;
   },
   slider_width: 350
