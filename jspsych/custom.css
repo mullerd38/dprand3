@@ -32,9 +32,9 @@
 }
 
 /* Style the question text to align it to the left */
-.jspsych-html-slider-response-stimulus p {
+#jspsych-html-slider-response-stimulus p {
   text-align: left;
-  margin-left: 200px; /* Optional: Indent the question text slightly */
+  margin-left: 100px; /* Optional: Indent the question text slightly */
 }
 
 /* Make sure the slider labels are evenly distributed */
