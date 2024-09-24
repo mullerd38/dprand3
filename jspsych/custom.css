@@ -23,8 +23,11 @@
 .stimuli {
   font-size: 20px;
 }
+
 .jspsych-html-slider-response-container {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start !important; /* Force left alignment */
 }
 
 .jspsych-html-slider-response-stimulus {
