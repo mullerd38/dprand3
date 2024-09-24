@@ -24,17 +24,26 @@
   font-size: 20px;
 }
 
+/* Ensure the container uses flexbox to stack elements vertically */
 .jspsych-html-slider-response-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Ensures left alignment */
+  align-items: flex-start; /* Align everything to the left */
 }
 
+/* Style the question text to align it to the left */
 .jspsych-html-slider-response-stimulus p {
   text-align: left;
-  margin-left: 20px; /* Optional for extra positioning */
+  margin-left: 20px; /* Optional: Indent the question text slightly */
 }
 
+/* Make sure the slider labels are evenly distributed */
 .jspsych-html-slider-response-label-container {
+  display: flex;
   justify-content: space-between;
+  width: 100%; /* Make sure labels cover the full width of the slider */
+}
+
+.jspsych-html-slider-response-label {
+  text-align: left; /* Left-align the labels */
 }
