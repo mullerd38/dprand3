@@ -222,7 +222,7 @@ var slider = {
     // Only return the question text here
     return `
     <div id="jspsych-html-slider-response-stimulus">
-      <p style="text-align: left; margin-left: 20px;">${questionText}</p>
+      <p style="text-align: left; margin-left: 70px;">${questionText}</p>
     </div>`;
   },
   slider_width: 350 // Keep this as is to control slider size
