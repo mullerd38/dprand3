@@ -24,20 +24,18 @@
   font-size: 20px;
 }
 
-/* Ensure the container uses flexbox to stack elements vertically */
+/* Does not work. Uses a # because in the HTLM it is a div id and not div class */
+#jspsych-html-slider-response-stimulus p {
+  text-align: left;
+  margin-left: 20px; /* Adjust the margin as needed */
+}
+
 .jspsych-html-slider-response-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* Align everything to the left */
 }
 
-/* Style the question text to align it to the left */
-#jspsych-html-slider-response-stimulus p {
-  text-align: left;
-  margin-left: 100px; /* Optional: Indent the question text slightly */
-}
-
-/* Make sure the slider labels are evenly distributed */
 .jspsych-html-slider-response-label-container {
   display: flex;
   justify-content: space-between;
