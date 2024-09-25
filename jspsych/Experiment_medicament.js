@@ -223,7 +223,6 @@ var slider = {
     return `
       <div id="jspsych-html-slider-response-stimulus">
         <p>${questionText}</p>
-        <!-- Add the instructional sentence below -->
         <p><em>(If you want to answer 1, do this.)</em></p>
       </div>`;
   },
