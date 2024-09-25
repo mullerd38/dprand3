@@ -24,6 +24,11 @@
   font-size: 20px;
 }
 
+
+.jspsych-survey-multi-choice-required {
+  display: none;
+}
+
 /* Does not work. FYI, it uses a # because in the HTLM it is a div id and not div class */
 #jspsych-html-slider-response-stimulus p {
   text-align: left;

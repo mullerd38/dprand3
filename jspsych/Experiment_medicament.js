@@ -174,7 +174,7 @@ var question = {
   type: jsPsychSurveyMultiChoice,
   questions: [
     {
-      prompt: "<p>On the basis of the information you have gathered, you think that:</p>",
+      prompt: "<p>On the basis of the information you have gathered, you think that1:</p>",
       options: function(){if (button_randomization == "medicine_high"){
         return [
           "Patients have a better chance of recovery with the medicine",
