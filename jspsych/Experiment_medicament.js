@@ -204,8 +204,8 @@ var slider = {
   max: 50,
   step: 1,
   labels: [
-    '1<br>A bit more likely', 
-    '25<br>Quite a bit more likely',
+    '1<br>More likely', 
+    '25<br>Clearly more likely',
     '50<br>Massively more likely'
   ],
   stimulus: function() {
@@ -220,10 +220,7 @@ var slider = {
     }
 
     // Only return the question text here
-    return `
-    <div id="jspsych-html-slider-response-stimulus">
-      <p style="text-align: left !important; margin-left: 10px !important;">${questionText}</p>
-    </div>`;
+    return `<p>${questionText}</p>`;
   },
   slider_width: 350 // Keep this as is to control slider size
 };
