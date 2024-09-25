@@ -221,9 +221,11 @@ var slider = {
 
     // Only return the question text here
     return `
-    <div id="jspsych-html-slider-response-stimulus">
-      <p style="text-align: left !important; margin-left: 10px !important;">${questionText}</p>
-    </div>`;
+      <div id="jspsych-html-slider-response-stimulus">
+        <p>${questionText}</p>
+        <!-- Add the instructional sentence below -->
+        <p><em>(If you want to answer 1, do this.)</em></p>
+      </div>`;
   },
   slider_width: 350 // Keep this as is to control slider size
 };

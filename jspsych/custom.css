@@ -24,7 +24,7 @@
   font-size: 20px;
 }
 
-/* Does not work. Uses a # because in the HTLM it is a div id and not div class */
+/* Does not work. FYI, it uses a # because in the HTLM it is a div id and not div class */
 #jspsych-html-slider-response-stimulus p {
   text-align: left;
   margin-left: 20px; /* Adjust the margin as needed */
