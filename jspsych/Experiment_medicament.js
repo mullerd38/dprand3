@@ -31,7 +31,7 @@ var welcome = {
   type: jsPsychHtmlKeyboardResponse,
   stimulus:
     "<h1 class ='custom-title'> Welcome </h1>" +
-    "<p class='instructions'>Thank you for taking part in this survey. <b> Please note that you can only participate from a computer.</b> </p>" +
+    "<p class='instructions'>999Thank you for taking part in this survey. <b> Please note that you can only participate from a computer.</b> </p>" +
     "<p class='instructions'>We are going to ask you to imagine you are a medical researcher who wants to test the effectiveness of a medicine against a fictitious disease. " +
     "Your task will be to give your opinion on the effectiveness of this medicine. You will also have to answer questions about your beliefs and personality.</p>" +
     "<p class='instructions'>If you have any question related to this research, please " +
@@ -265,92 +265,6 @@ var attention_check = {
   button_label: 'Continue',
 }
 
-/*
-
-//Survey
-var instruction_questionnary = {
-  type: jsPsychHtmlKeyboardResponse,
-  stimulus:
-    "<p class='instructions_questionnary'>The first part of this study has been completed. You will now have to answer a series of questions about your points of view and personality.</p>" +
-    "<p class = 'continue-instructions'>Press <strong>space</strong> to start the questions.</p>",
-  choices: [' ']
-};
-
-///Questionnary gcbs 
-var gcbs_label = [
-  "<br>Definitely not true", 
-  "<br>Probably not true", 
-  "<br>Not sure / Cannot decide", 
-  "<br>Probably true", 
-  "<br>Definitely true"
-];
-
-var gcbs_questionnary = {
-  type: jsPsychSurveyLikert,
-  preamble:
-  "<p class='instructions_questionnary bold'>Beliefs About the World</p>" +// ATTENTION différent de qualtrics
-  "<p class='instructions_questionnary'>We are interested in your beliefs about the world. There is often debate about whether or not the public is told the whole truth about various important issues. " +// ATTENTION différent de qualtric
-  "This brief survey is designed to assess your beliefs about some of these subjects. " +// ATTENTION différent de qualtric
-  "<p class='instructions_questionnary '>Please indicate the extent to which you think the following statements are likely to be true.</p>",
-  questions: [
-    {prompt: "The government is involved in the murder of innocent citizens and/or well-known public figures, and keeps this a secret.", name: 'gcbs1', labels: gcbs_label, required: true},
-    {prompt: "The power held by heads of state is second to that of small unknown groups who really control world politics.", name: 'gcbs2', labels: gcbs_label, required: true},
-    {prompt: "Secret organizations communicate with extraterrestrials, but keep this fact from the public.", name: 'gcbs3', labels: gcbs_label, required: true},
-    {prompt: "The spread of certain viruses and/or diseases is the result of the deliberate, concealed efforts of some organization.", name: 'gcbs4', labels: gcbs_label, required: true},
-    {prompt: "Groups of scientists manipulate, fabricate, or suppress evidence in order to deceive the public.", name: 'gcbs5', labels: gcbs_label, required: true},
-    {prompt: "The government permits or perpetrates acts of terrorism on its own soil, disguising its involvement.", name: 'gcbs6', labels: gcbs_label, required: true},
-    {prompt: "A small, secret group of people is responsible for making all major world decisions, such as going to war.", name: 'gcbs7', labels: gcbs_label, required: true},
-    {prompt: "Evidence of alien contact is being concealed from the public.", name: 'gcbs8', labels: gcbs_label, required: true},
-    {prompt: "Technology with mind-control capacities is used on people without their knowledge.", name: 'gcbs9', labels: gcbs_label, required: true},
-    {prompt: "New and advanced technology which would harm current industry is being suppressed.", name: 'gcbs10', labels: gcbs_label, required: true},
-    {prompt: "The government uses people as patsies to hide its involvement in criminal activity.", name: 'gcbs11', labels: gcbs_label, required: true},
-    {prompt: "Certain significant events have been the result of the activity of a small group who secretly manipulate world events.", name: 'gcbs12', labels: gcbs_label, required: true},
-    {prompt: "Some UFO sightings and rumors are planned or staged in order to distract the public from real alien contact.", name: 'gcbs13', labels: gcbs_label, required: true},
-    {prompt: "Experiments involving new drugs or technologies are routinely carried out on the public without their knowledge or consent.", name: 'gcbs14', labels: gcbs_label, required: true},
-    {prompt: "A lot of important information is deliberately concealed from the public out of self-interest.", name: 'gcbs15', labels: gcbs_label, required: true},
-  ],
-  required_error: "Please answer the question."
-};
-
-///Questionnary IH
-var gihs_label = [
-  "<br>Not at all true of me", 
-  "<br>Slightly true of me", 
-  "<br>Moderately true of me", 
-  "<br>Very true of me", 
-  "<br>Extremely true of me"
-];
-   
-var gihs_questionnary = {
-  type: jsPsychSurveyLikert,
-  preamble:
-  "<p class='instructions_questionnary bold'>Please answer this set of questions about you.</p>"+
-  "<p class='instructions_questionnary'>Again, there are no right or wrong answers. Just tell what you think and be as honest as possible.</p>"+
-  "<p class='instructions_questionnary'>Please indicate to what extent these caracteristics describe you on the following scale: " + //ATTENTION difference qualtric
-  "Not at all true of me, Slightly true of me, Moderately true of me, Very true of me, Extremely true of me",
-  questions: [
-    {prompt: "<div style = 'width: 900px;'>I question my own opinions, positions, and viewpoints because they could be wrong.</div>", name: 'gihs1', labels: gihs_label, required: true},
-    {prompt: "I reconsider my opinions when presented with new evidence.", name: 'gihs2', labels: gihs_label, required: true},
-    {prompt: "I recognize the value in opinions that are different from my own.", name: 'gihs3', labels: gihs_label, required: true},
-    {prompt: "I accept that my beliefs and attitudes may be wrong.", name: 'gihs4', labels: gihs_label, required: true},
-    {prompt: "In the face of conflicting evidence, I am open to changing my opinions.", name: 'gihs5', labels: gihs_label, required: true},
-    {prompt: "I like finding out new information that differs from what I already think is true.", name: 'gihs6', labels: gihs_label, required: true},
-  ],
-  required_error: "Please answer the question."
-}
-
-var questionnary = {
-  timeline: (function(){
-    var order_questionnary_randomization = jsPsych.randomization.sampleWithoutReplacement(["gcbs_first", "gihs_first"], 1)[0];
-    if (order_questionnary_randomization == "gcbs_first"){
-      return [gcbs_questionnary, gihs_questionnary]
-    } else {
-      return [gihs_questionnary, gcbs_questionnary]
-    }
-  })()
-}
-*/
-
 
 var instruction_demographic_questionnary = {
   type: jsPsychHtmlKeyboardResponse,
@@ -431,7 +345,7 @@ var session_id = jsPsych.data.getURLVariable('SESSION_ID');
 //Save data ---------------------------------------------------------------------------------
 const subject_id = jsPsych.randomization.randomID(10);
 const filename = `${subject_id}.csv`;
-const experiment_id = "RrGG2ORSPpVt";
+const experiment_id = "CmBQ1EWwrLWq";
 // Your OSF token
 // const osfToken = 'VLFG5mbOACd0fk6jkN1IhAwbdrCi8OSm62rzTqPBreN3asR5QCcIeTBz9YkwJy1WL9CkNp';
 
