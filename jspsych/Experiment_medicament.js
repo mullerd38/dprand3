@@ -222,7 +222,7 @@ var slider = {
     // Only return the question text here
     return `
         <p style="margin-bottom: 1px;">${questionText}</p>
-        <p style="text-align: center; margin-top: 0px !important;"><em>(If you want to answer 1, simply click on the handle6)</em></p>`;
+        <p style="text-align: center; margin-top: 0px !important;"><em>(If you want to answer 1, simply click on the handle)</em></p>`;
   },
   slider_width: 350 // Keep this as is to control slider size
 };
