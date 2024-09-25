@@ -25,8 +25,9 @@
 }
 
 
-.jspsych-survey-multi-choice-required {
-  display: none;
+/* Hide the star indicating required questions */
+span.required {
+  display: none !important;
 }
 
 /* Does not work. FYI, it uses a # because in the HTLM it is a div id and not div class */
