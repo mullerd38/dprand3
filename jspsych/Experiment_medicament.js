@@ -76,7 +76,7 @@ var consigne = {
   "<p class= 'instructions_questionnary'> <b> 1) continue testing </b>, in other words give the medicine or placebo to the next patient.</p>" +
   "<p class= 'instructions_questionnary'> <b> 2) stop the trials </b> if you feel you have tested enough patients to be able to give your opinion on the efficacy of the medicine.</p>" +
   "<p class= 'instructions_questionnary'>Many patients suffering from the disease have chosen to volunteer to test the medicine. You will therefore be able to carry out a large number of tests to determine its effectiveness.</p>",
-  choices: ['I have read carrefully and I can start the study']
+  choices: ['I have read carefully and I can start the study']
 };
 
 var stim = [
